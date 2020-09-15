@@ -9,7 +9,8 @@ namespace órai_munka0915
 {
     class Teglalap
     {
-        public int a, b;
+        public int a;
+            public int b;
         public int Kerulet()
         {
             return 2 * (a + b);
