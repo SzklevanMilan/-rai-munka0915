@@ -19,6 +19,11 @@ namespace órai_munka0915
         {
             return Math.Pow(r,2) * Math.PI;
         }
+        public Kor(int sugar)
+        {
+            r = sugar;
+        
+        }
     }
     class Teglalap
     {
@@ -48,10 +53,10 @@ namespace órai_munka0915
 
             Console.WriteLine();
 
-            Kor k = new Kor();
-
-            Console.WriteLine("Írd be a kör sugarát: ");
-            k.r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Írja be a kör sugarát.");
+            Kor k = new Kor(int.Parse(Console.ReadLine()));
+           //Console.WriteLine("Írd be a kör sugarát: ");
+            //k.r = int.Parse(Console.ReadLine());
 
             Console.WriteLine("A kör kerülete {0}.",k.Kerulet());
             Console.WriteLine("A kör területe {0}.",k.Terulet());
